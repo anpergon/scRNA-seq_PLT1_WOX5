@@ -12,9 +12,26 @@ This repository contains the analysis pipeline and supporting files for our sing
 ## Key Findings
 
 - **Cell Identity Changes**: *PLT1*-*WOX5* overexpression triggers rapid and specific changes in root cell identities indicated by the KL divergence-weighted cosine distance calculation.
-- **Gene Regulatory Networks**: A subset of cells that putatively originate from XPP cells shows activation of Cajal body-related genes and ribosome biogenesis, indicating a trend towards dedifferentiation.
+- **Gene Regulatory Networks**: a subset of cells that putatively originate from XPP cells shows activation of Cajal body-related genes and ribosome biogenesis, indicating a trend towards dedifferentiation.
 - **Structural Modeling**: AlphaFold-metainference accurately generates a structural ensemble for WOX5.
 
-## Repository Structure
-
+## Repository Content
+* **`R/`:** contains the code to run COPILOT
+* **`conda_envs`:** contains instructions to install all the conda environments used in this study
+* **`jupyter_notebooks/`:** contains .ipynb files, including:
+    * AF_metainference: generation of WOX5 structural ensemble.
+    * CellRank: cell fate probabilities estimation.
+    * rds_to_RData and RData_to_h5ad: two consecutive notebooks to convert Seurat objects to Anndata objects
+    * correlation_analysis: KL divergence-weighted cosine distances.
+    * scTour: pseudotime analysis. 
+    * scVI_scANVI: cell type and developmental stage annotation.
+    * scVelo: RNA velocity analysis.
+* **`output/`:** contains the output of our analysis:
+    * 1-1_scKB_preparation: instructions to prepare the files for scKB mapping.
+    * 4-MINI-EX: PLT1-WOX5 shared targets at 10 hours in cluster Unknown4.
+* **`py/`:** Contains code in Python:
+    * 1_scKB: code to run scKB mapping.
+    * 3_scVI_hyperparameter_tuning: code to run hyperparameter tuning
+* **`supp_data/misc`:** Contains supplementary data used in the project such as the set of genes identified as protoplasting-associated
+* **`README.md`:** This file, providing an overview of the repository.
 
