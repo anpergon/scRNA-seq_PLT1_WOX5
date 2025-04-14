@@ -35,3 +35,12 @@ This repository contains the analysis pipeline and supporting files for our sing
 * **`supp_data/misc`:** Contains supplementary data used in the project such as the set of genes identified as protoplasting-associated
 * **`README.md`:** This file, providing an overview of the repository.
 
+
+## Pipeline
+* **`1-scKB/`:** create conda_scKB environment, prepare the input files according to output/1-1_scKB_preparation and run scKB mapping with py/1_scKB.py
+* **`2-COPILOT/`:** create conda_COPILOT environment and use the output from 1-scKB to run COPILOT with the function in R/2-COPILOT.R
+* **`3-scVI/`:** create conda_scRNA_seq environment and run the correlation analysis with jupyter_notebooks/3-1_correlation_analysis.ipynb, then run cell type and developmental stage prediction with jupyter_notebooks/3-2-scVI_scANVI.ipnyb and hyperparameter tuning with py/3_scVI_hyperparameter_tuning.py. Next, run RNA velocity analyses with jupyter_notebooks/3-3_scVelo.ipynb, pseudotime inference with jupyter_notebooks/3-4_scTour.ipynb and cell fate probability estimation with jupyter_notebooks/3-5_CellRank.ipynb
+* **`4-MINI-EX/`:** prepare dataset for MINI-EX run with jupyter_notebooks/4-1_MINI-EX_preparation.ipynb and run according to MINI-EX repository
+* **`5-AF_metainference/`:** create the conda_AF_metainference environment run Alphafold-metainference protocol with jupyter_notebooks/5_AF_metainference.ipnyb
+
+
