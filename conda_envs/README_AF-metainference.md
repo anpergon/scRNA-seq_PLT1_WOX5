@@ -5,10 +5,7 @@ This README provides instructions for setting up the `conda_AF-metainference` co
 ## Prerequisites
 
 * Conda installed on your system.
-* CUDA-capable GPU (if using GPU acceleration).
-* Internet connection for downloading packages.
-* Basic understanding of command-line operations.
-* Access to the specified lustre directory `/lustre/BIF/nobackup/perez070/miniconda3/envs/`. Adjust the final copy path if your environment differs.
+* CUDA-capable GPU (if using GPU acceleration)..
 
 ## Setup Instructions
 
@@ -77,10 +74,3 @@ This README provides instructions for setting up the `conda_AF-metainference` co
     ```
 
     * **Important:** Adjust the destination path (`/lustre/BIF/nobackup/perez070/miniconda3/envs/conda_AF-metainference/lib`) to match your conda environment's library directory.
-
-## Notes
-
-* Ensure that the zip files `openmm.zip`, `plumed_lib.zip`, and `plumed_include.zip` are present in the `OpenMM-Plumed-MPI/` directory before running the `unzip` commands.
-* If you encounter any issues with package installations, check the Conda and package documentation for troubleshooting.
-* Adjust CUDA version and paths according to your system.
-* This setup is optimized for the specified environment. If you are working in a different setup, you may need to adjust the paths and package versions accordingly.
