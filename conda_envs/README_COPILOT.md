@@ -6,9 +6,6 @@ This README provides instructions for setting up the `conda_COPILOT` conda envir
 
 * Conda installed on your system.
 * R installed within the conda environment.
-* Internet connection for downloading packages.
-* Basic understanding of command-line operations and R package installation.
-* Access to the specified lustre directory `/lustre/BIF/nobackup/perez070/scRNA-seq_PLT1-WOX5/github_repositories/COPILOT`. Adjust the final installation path if your environment differs.
 
 ## Setup Instructions
 
@@ -58,7 +55,10 @@ This README provides instructions for setting up the `conda_COPILOT` conda envir
     py_install("umap-learn")
     ```
 
-7.  **Install the local COPILOT package from the specified directory:**
+7.  **Modify the COPILOT directory to avoid problems related to incompatibilities of DoubletFinder versions:**
+
+
+8.  **Install the local COPILOT package from the specified directory to avoid the problem with DoubletFinder:**
 
     ```R
     devtools::install("/lustre/BIF/nobackup/perez070/scRNA-seq_PLT1-WOX5/github_repositories/COPILOT")
@@ -66,11 +66,3 @@ This README provides instructions for setting up the `conda_COPILOT` conda envir
 
     * **Important:** Adjust the installation path (`/lustre/BIF/nobackup/perez070/scRNA-seq_PLT1-WOX5/github_repositories/COPILOT`) to match the location of your local COPILOT package.
 
-## Notes
-
-* Ensure that you have access to the specified lustre directory for the final installation step.
-* If you encounter any issues with package installations, check the Conda, Bioconductor, and R package documentation for troubleshooting.
-* This setup is optimized for the specified environment. If you are working in a different setup, you may need to adjust the paths and package versions accordingly.
-* The `reticulate` step ensures that the Python `umap-learn` package is available for use within R.
-* The final installation step assumes that the COPILOT package is present as a source package in the specified directory.
-* If you are installing COPILOT from a different location, please change the path accordingly.
