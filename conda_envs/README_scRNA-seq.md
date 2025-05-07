@@ -64,8 +64,8 @@ This README provides instructions for creating and configuring the `conda_scRNA-
 7.  **Install Hyperopt and Ray Tune via pip:**
 
     ```bash
-    /lustre/BIF/nobackup/perez070/miniconda3/envs/scRNA-seq_3/bin/pip install hyperopt
-    /lustre/BIF/nobackup/perez070/miniconda3/envs/scRNA-seq_3/bin/pip install "ray[tune]"
+    $CONDA_PREFIX/envs/scRNA-seq_3/bin/pip install hyperopt
+    $CONDA_PREFIX/envs/scRNA-seq_3/bin/pip install "ray[tune]"
     ```
 
     Install Hyperopt and Ray Tune using pip. *Adjust the path to your pip executable if needed.*
@@ -74,7 +74,7 @@ This README provides instructions for creating and configuring the `conda_scRNA-
 
     ```bash
     conda install bioconda::scib -y
-    /lustre/BIF/nobackup/perez070/miniconda3/envs/scRNA-seq_3/bin/pip install scib-metrics
+    $CONDA_PREFIX/envs/scRNA-seq_3/bin/pip install scib-metrics
     ```
     Install scib via conda, and scib-metrics via pip. *Adjust pip path if needed.*
 
@@ -94,7 +94,7 @@ This README provides instructions for creating and configuring the `conda_scRNA-
 10. **Install scvelo from GitHub:**
 
     ```bash
-    /lustre/BIF/nobackup/perez070/miniconda3/envs/conda_scRNA-seq/bin/pip install git+[https://github.com/theislab/scvelo@main](https://github.com/theislab/scvelo@main)
+    $CONDA_PREFIX/envs/conda_scRNA-seq/bin/pip install git+ https://github.com/theislab/scvelo@main
     ```
 
     Install the main branch version of scvelo from GitHub. *Adjust the pip path to your pip executable if needed.

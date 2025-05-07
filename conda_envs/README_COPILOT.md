@@ -61,8 +61,5 @@ This README provides instructions for setting up the `conda_COPILOT` conda envir
 8.  **Install the local COPILOT package from the specified directory to avoid the problem with DoubletFinder:**
 
     ```R
-    devtools::install("/lustre/BIF/nobackup/perez070/scRNA-seq_PLT1-WOX5/github_repositories/COPILOT")
+    devtools::install("/path/to/your/directory/scRNA-seq_PLT1-WOX5/github_repositories/COPILOT")
     ```
-
-    * **Important:** Adjust the installation path (`/lustre/BIF/nobackup/perez070/scRNA-seq_PLT1-WOX5/github_repositories/COPILOT`) to match the location of your local COPILOT package.
-

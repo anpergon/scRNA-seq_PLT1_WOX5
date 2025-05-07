@@ -11,7 +11,7 @@ This conda environment can be used to run scKB mapping
 1.  **Clone the scKB Repository:**
 
     ```bash
-    git clone [https://github.com/ohlerlab/scKB.git](https://github.com/ohlerlab/scKB.git)
+    git clone https://github.com/ohlerlab/scKB.git](https://github.com/ohlerlab/scKB.git
     cd scKB
     ```
 
@@ -81,4 +81,4 @@ This conda environment can be used to run scKB mapping
 
 ## Usage
 
-After installation, you can proceed with the preparation of the input files for scKB
+After installation, you can proceed with the preparation of the input files for scKB.

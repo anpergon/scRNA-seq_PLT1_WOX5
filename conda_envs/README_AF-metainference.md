@@ -41,7 +41,7 @@ This README provides instructions for setting up the `conda_AF-metainference` co
 5.  **Clone and build OpenMM-Plumed-MPI:**
 
     ```bash
-    git clone [https://github.com/vendruscolo-lab/OpenMM-Plumed-MPI](https://github.com/vendruscolo-lab/OpenMM-Plumed-MPI)
+    git clone https://github.com/vendruscolo-lab/OpenMM-Plumed-MPI
     cd OpenMM-Plumed-MPI/
     mkdir build install openmm -p plumed/include -p plumed/lib
     unzip openmm.zip -d openmm
@@ -70,7 +70,5 @@ This README provides instructions for setting up the `conda_AF-metainference` co
 
     ```bash
     cd ../install/lib
-    cp -r * /lustre/BIF/nobackup/perez070/miniconda3/envs/conda_AF-metainference/lib
+    cp -r * $CONDA_PREFIX/envs/conda_AF-metainference/lib
     ```
-
-    * **Important:** Adjust the destination path (`/lustre/BIF/nobackup/perez070/miniconda3/envs/conda_AF-metainference/lib`) to match your conda environment's library directory.
