@@ -1,4 +1,4 @@
-# conda_COPILOT Setup
+# conda_COPILOT Environment Setup
 
 This README provides instructions for setting up the `conda_COPILOT` conda environment, which includes dependencies for COPILOT and related single-cell RNA sequencing (scRNA-seq) analysis tasks.
 

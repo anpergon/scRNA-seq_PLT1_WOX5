@@ -1,4 +1,4 @@
-# conda_AF-metainference Setup
+# conda_AF-metainference Environment Setup
 
 This README provides instructions for setting up the `conda_AF-metainference` conda environment, which includes dependencies for AlphaFold metainference and related tasks.
 
