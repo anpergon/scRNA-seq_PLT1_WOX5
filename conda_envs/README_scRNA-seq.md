@@ -1,4 +1,4 @@
-# scRNA-seq_3 Conda Environment Setup
+# conda_scRNA-seq Conda Environment Setup
 
 This README provides instructions for creating and configuring the `conda_scRNA-seq` conda environment, designed for single-cell RNA sequencing (scRNA-seq) data analysis. This environment includes a comprehensive set of Python and R packages for various scRNA-seq analysis tasks.
 
